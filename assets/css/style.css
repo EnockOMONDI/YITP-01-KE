@@ -990,7 +990,7 @@ p {
 .header__category ul li {
   position: relative;
 }
-.header__category ul li .cat-submenu {
+.header__category ul  li .cat-submenu {
   position: absolute;
   top: calc(100% + 30px);
   left: 0;
@@ -1017,6 +1017,7 @@ p {
   display: block;
   margin-right: 0;
 }
+
 .header__category ul li .cat-submenu li > a {
   width: 100%;
   display: block;
