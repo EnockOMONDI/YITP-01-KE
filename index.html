@@ -24,6 +24,43 @@
       <link rel="stylesheet" href="assets/css/default.css">
       <link rel="stylesheet" href="assets/css/style.css">
    </head>
+   <script>
+      var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?80028';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+      "enabled":true,
+      "chatButtonSetting":{
+          "backgroundColor":"#ff5d15",
+          "ctaText":"Chat with us",
+          "borderRadius":"25",
+          "marginLeft": "0",
+          "marginRight": "20",
+          "marginBottom": "20",
+          "ctaIconWATI":false,
+          "position":"right"
+      },
+      "brandSetting":{
+          "brandName":"Youth Impact Global",
+          "brandSubTitle":"undefined",
+          "brandImg":"https://youthimpactglobal.com/assets/img/logo/youthimpact.png",
+          "welcomeText":"Hi there!\nHow can I help you?",
+          "messageText":"Hi, Im just from your website, requesting a call back",
+          "backgroundColor":"#ff5d15",
+          "ctaText":"Chat with us",
+          "borderRadius":"25",
+          "autoShow":false,
+          "phoneNumber":"254722646858"
+      }
+      };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+  </script>
    <body>
       <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -731,19 +768,7 @@
               
 
              
-               <div class="row align-items-end">
-                  <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-8">
-                     <div class="section__title-wrapper mb-45 text-center">
-         
-                        <h3 > Course Fee: <strike>KES 35,000 ($270)</strike>  
-                      </h3>
-                      <h3 style=" color: red;"> Limited Offer: <small>KES 5,000 ($39) –  Pay in 2 easy instalments of KES 2,500 ($20) each </small> 
-                      </h3>
-                        <h4>Offer Valid for the first 300 enrolments only!</h4>
-                     </div>
-                  
-               </div>
-               </div>
+              
                <div class="row">
                   <div class="col-xxl-12 offset-xxl-12 col-xl-6 offset-xl-12">
                      <div class="events__allow mb-40 text-center">
@@ -759,32 +784,38 @@
                             </a>
                               </li>
                            <li><i class="fal fa-check"></i> Choose your payment plan</li>
-                           <li><i class="fal fa-check"></i> After payment, send your confirmation to info@youthimpactglobal.com or  <a href="https://wa.me/254722646958" class="link-btn">
-                              Here
-                               <i class="far fa-arrow-right"></i>
-                               <i class="far fa-arrow-right"></i>
-                            </a></li>
+                           <li><i class="fal fa-check"></i> After payment, send your confirmation to info@youthimpactglobal.com </li>
                            <li><i class="fal fa-check"></i> Receive your course schedule & start learning!</li>
                         </ul>
                      </div>
                   </div>
                </div>
-          
+               <div class="row ">
+                  <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-8">
+                     <div class="section__title-wrapper mb-45 text-center">
+         
+                        <h3 > Course Fee: <strike> KES 35,000 ($270)</strike>  
+                      </h3>
+                      <h3 style=" color: #ff5d15;"> Limited Offer: <small>KES 5,000 ($39) –  Pay in 2 easy instalments of KES 2,500 ($20) each </small> 
+                      </h3>
+                        <h4>Offer Valid for the first 300 enrolments only!</h4>
+                     </div>
+                  
+               </div>
+               </div>
                <div class="row">
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                      <div class="course__item course__item-2 white-bg mb-30 transition-3">
-                      
+                        <h5>Step 1:</h5>
+                        <br>
                         <div class="course__content-2" style="margin-top: -10px;">
-                           <h3 class="course__title-2"><a href="#">Register for free
+                           <h3 class="course__title-2"><a href="contact.html">Register for free
                           
                          </a></h3>
-                         <h5>Step 1:</h5>
-                         <br>
                            <p> 📌 Reserve your spot by filling out our quick registration form.
-                              <br><br>
+                              <br>
                               <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDwCPwF65rRRQB2xVZi4v5p4A2__RYmqXvCeRrPtnxSoft2Q/viewform?usp=header" class="link-btn">
-                            <span style="color: blue;">Here</span>
-                               <i class="far fa-arrow-right"></i>
+                            <span style="color: blue;"> Here </span>
                                <i class="far fa-arrow-right"></i>
                             </a></p>
                         </div>
@@ -797,30 +828,28 @@
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                      <div class="course__item course__item-2 white-bg transition-3">
-                      
+                        <h5>Step 2:</h5>
                         <div class="course__content-2" style="margin-top: -10px;">
-                           <h3 class="course__title-2"><a href="#">Complete Payment.</a></h3>
-                           <h5>Step 2:</h5>
-                           <p>📌 Flexible Payment Option: Pay in 2 easy installments of KES 2,500 ($20) each</p>
+                           <h3 class="course__title-2"><a href="https://www.paypal.com/ncp/payment/FUAJVJ66L978C">Complete Payment.</a></h3>
+                           <p>📌 Pay in 2 easy installments of KES 2,500 ($20) each</p>
                            <div class="course__bottom d-sm-flex justify-content-between align-items-center">
                               <div class="course__content-2 " style="margin-top: -40px;">
                               <h5>Bank Transfer</h5>
                         
                                <ul>
-                                 <li>Bank Name: [Your Bank Name]
+                                 <li>Bank Name: Absa Bank
                                  
                                  </li>
-                                 <li>Account Name: [Your Account Name]</li>
-                                 <li>Account Number: [Your Account Number]</li>
+                                 <li>Paybill: 303030</li>
+                                 <li>Account Number:2046381649</li>
                                </ul>
 
                               </div>
                            </div>
 
                            <p style="margin-top: 10px;">Or</p>
-                           <p style="margin-top: -20px; color: blue;"><a href="https://www.paypal.com/ncp/payment/FUAJVJ66L978C" class="link-btn">
-                              Pay Now
-                               <i class="far fa-arrow-right"></i>
+                           <p style="margin-top: -20px; "><a href="https://www.paypal.com/ncp/payment/FUAJVJ66L978C" class="link-btn">
+                              <span style="color: blue;">Pay Now with Paypal</span>
                                <i class="far fa-arrow-right"></i>
                             </a> </p>
                         </div>
@@ -865,7 +894,7 @@
 
       </main>
       <footer>
-         <div class="footer__area grey-bg-2" style="margin-top: -240px;">
+         <div class="footer__area grey-bg" style="margin-top: -240px;">
             <br><br><br><br><br>
             <div class="footer__top pt-190 pb-40">
                <div class="container">
