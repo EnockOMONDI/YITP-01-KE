@@ -23,6 +23,43 @@
       <link rel="stylesheet" href="assets/css/default.css">
       <link rel="stylesheet" href="assets/css/style.css">
    </head>
+   <script>
+      var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?80028';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+      "enabled":true,
+      "chatButtonSetting":{
+          "backgroundColor":"#ff5d15",
+          "ctaText":"Chat with us",
+          "borderRadius":"25",
+          "marginLeft": "0",
+          "marginRight": "20",
+          "marginBottom": "20",
+          "ctaIconWATI":false,
+          "position":"right"
+      },
+      "brandSetting":{
+          "brandName":"Youth Impact Global",
+          "brandSubTitle":"undefined",
+          "brandImg":"https://youthimpactglobal.com/assets/img/logo/youthimpact.png",
+          "welcomeText":"Hi there!\nHow can I help you?",
+          "messageText":"Hi, Im just from your website, requesting a call back",
+          "backgroundColor":"#ff5d15",
+          "ctaText":"Chat with us",
+          "borderRadius":"25",
+          "autoShow":false,
+          "phoneNumber":"254722646858"
+      }
+      };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+  </script>
    <body>
       <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
