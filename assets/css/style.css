@@ -299,7 +299,9 @@ p {
 .orange-bg {
   background: #ff5d15;
 }
-
+.dark-bg {
+background: #1a2e53;
+} 
 .purple-bg {
   background: #8007e6;
 }
